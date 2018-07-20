@@ -26,3 +26,8 @@ Some important point about this graph plotter:
                 arsech 3*(x-2)       : arsech(3*(x-2))
                 coth 5*x             : coth(5*x)
                 arcoth 3*x           : arcoth(3*x)
+                log x (base e)       : log(x)
+                log10 x+5 (base 10)  : log10(x+5)
+                log1p x              : log1p(x)
+                log2 x (base 2)      : log2(x)
+                |x|                  : abs(x)
