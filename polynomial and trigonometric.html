@@ -53,6 +53,7 @@
             text-align: center;
             border: 1px solid black;
             border-radius: 5%;
+            z-index: 2;
         }
         #anotherinput{
             cursor: pointer;
@@ -208,7 +209,10 @@
                     var eachsmallwidth=eachdivwidth/5;
                     var noofwidthdivision=parseInt(Math.ceil(halfwindowwidth/eachdivwidth));
                     var i;
-                    
+                    ctx.font = "30px Arial";
+                    ctx.fillText("Y",halfwindowwidth+5,30);
+                    ctx.font = "30px Arial";
+                    ctx.fillText("X",halfwindowwidth*2-30,halfwindowheight-5);
                     ctx.strokeStyle="#000000";
                     // alert(windowwidth+" "+windowheight);
                     ctx.beginPath();
@@ -518,6 +522,11 @@
                 return stack.top();
             }
             function drawgraph(postfixexp,halfwindowwidth,halfwindowheight,ctx,eachsmallwidth){            // drawing the graph
+                ctx.fillStyle="#000000";
+                ctx.font = "30px Arial";
+                ctx.fillText("Y",halfwindowwidth+5,30);
+                ctx.font = "30px Arial";
+                ctx.fillText("X",halfwindowwidth*2-30,halfwindowheight-5);
                 ctx.strokeStyle="#FF0000";
                 ctx.fillStyle="#FF0000";
                 // alert(parseFloat(Math.tan(Math.PI/2)));
