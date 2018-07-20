@@ -2,6 +2,7 @@
 A simple javascript graph plotter that can plot polynomial and trigonometric expressions. 
 This graph plotter show a full screen graph.User can zoomin or zoomout the graph.User can easily get the value of y by counting the no of small boxes for any values of x.
 
+"polynomial and trigonometric" file is the actual code for this graph plotter.And "polynomial" file is created initially.
 Some important point about this graph plotter:
   1. Input expression must be parenthesized correctly i.e. use sin(x) instead of sin x or use 10*(x-2)^2+45*x and x is always in lower-case.Don't use whitespace in the expression. 
   2.            To use:                 use:
