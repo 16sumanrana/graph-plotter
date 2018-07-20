@@ -25,7 +25,7 @@
             top: 20px;
             right: 20px;
             width: 200px;
-            height: 175px;
+            height: 225px;
             z-index: 1;
             background-color: #eee;
             border-radius: 5%;
@@ -42,6 +42,17 @@
             height: auto;
             cursor: pointer;
             margin-left: 95%;
+        }
+        .inform{
+            background-color: #eee;
+            position: absolute;
+            width: 250px;
+            height: 100px;
+            top: 20px;
+            left: 20px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 5%;
         }
         #anotherinput{
             cursor: pointer;
@@ -79,16 +90,25 @@
                     <br/>
                     <div class="information">
                         <p>Input the expression like <br/>Y = (x+5)^2+50-2*(x-2)<br/>Y = asin(x/100)<br/>Y = 20*coth(x+5)</p>
+                        <p style="color: red">Please click <a table="_blank" href="https://github.com/16sumanrana/Javascript-graph-plotter/blob/master/README.md">here</a> before submission</p>
                     </div>
                     <br/>
                     <div class="footer">
-                        <button id="submit" type="button">Submit</button>
+                        <button id="submit" type="button" title="Please visit the link first">Submit</button>
                     </div>
                 
             </div>
         </div>
         <div id="anotherinput">
             <p>Input the expresion!</p>
+        </div>
+        <div class="inform">
+            <div class="closediv" data-dismiss="inputdiv">
+                <div class="closecross" id="closebtn2">&times;</div>
+            </div>
+            <p>Each smallbox along X-axis : 1 unit.</p>
+            <p>Each smallbox along Y-axis : 1 unit.</p>
+            <p>In sin(x) graph x is in degree.</p>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
@@ -103,7 +123,9 @@
                     $('.inputdiv').hide('fade');
                     anotherinput();
                 });
-
+                $('#closebtn2').click(function(){
+                    $('.inform').hide('fade');
+                });
                 function anotherinput(){
                     $('#anotherinput').show();
                     $('#anotherinput').click(function(){
@@ -453,7 +475,7 @@
                                 case "tanh":
                                     a=stack.top();stack.pop();//a=parseFloat((a*(Math.PI/180.0)));
                                     stack.push(parseFloat(Math.tanh(a)));break;
-                                case "cosech":
+                                case "csch":
                                     a=stack.top();stack.pop();//a=parseFloat((a*(Math.PI/180.0)));
                                     stack.push(parseFloat(1/(Math.sinh(a))));break;
                                 case "sech":
@@ -462,22 +484,22 @@
                                 case "coth":
                                     a=stack.top();stack.pop();//a=parseFloat((a*(Math.PI/180.0)));
                                     stack.push(parseFloat(1/(Math.tanh(a))));break;
-                                case "asinh":
+                                case "arsinh":
                                     a=stack.top();stack.pop();//a=parseFloat((a*(Math.PI/180.0)));
                                     stack.push(parseFloat(Math.asinh(a)));break;
-                                case "acosh":
+                                case "arcosh":
                                     a=stack.top();stack.pop();//a=parseFloat((a*(Math.PI/180.0)));
                                     stack.push(parseFloat(Math.acosh(a)));break;
-                                case "atanh":
+                                case "artanh":
                                     a=stack.top();stack.pop();//a=parseFloat((a*(Math.PI/180.0)));
                                     stack.push(parseFloat(Math.atanh(a)));break;
-                                case "acosech":
+                                case "arcsch":
                                     a=stack.top();stack.pop();//a=parseFloat((a*(Math.PI/180.0)));
                                     stack.push(parseFloat(Math.sinh(1/a)));break;
-                                case "asech":
+                                case "arsech":
                                     a=stack.top();stack.pop();//a=parseFloat((a*(Math.PI/180.0)));
                                     stack.push(parseFloat((Math.cosh(1/a))));break;
-                                case "acoth":
+                                case "arcoth":
                                     a=stack.top();stack.pop();//a=parseFloat((a*(Math.PI/180.0)));
                                     stack.push(parseFloat((Math.tanh(1/a))));break;
                             }
