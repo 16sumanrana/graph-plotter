@@ -36,4 +36,4 @@ Some important point about this graph plotter:
   3. This graph plotter does not show infinity.
   
   Process:
-    Getting the infix expression, the infix expression is transformed to postfix expression. Evaluate the postfix expression for every pixel and plot the value. Each small unit=5px.In sin(x) graph x is in degree.
+    Getting the infix expression, the infix expression is transformed to postfix expression. Evaluate the postfix expression for every pixel and plot the value. Each small unit=5px.In trigonometric graph x is in degree.
