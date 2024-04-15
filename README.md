@@ -7,7 +7,7 @@ https://16sumanrana.github.io/graph-plotter/index.html
 Note:
 "polynomial and trigonometric" (later changed to index.html) file is the actual code for this graph plotter. And "polynomial" file is created initially.
 
-Some important points about this graph plotter:
+# Some important points about this graph plotter
   1. Input expression must be parenthesized correctly i.e. use sin(x) instead of sin x or use 10*(x-2)^2+45*x and x is always in lower-case.Don't use whitespace in the expression. 
   2.            To use:                 use:
   
@@ -38,6 +38,6 @@ Some important points about this graph plotter:
                 log2 x (base 2)      : log2(x)
                 |x|                  : abs(x)
   3. This graph plotter does not show infinity.
-  
-  Process:
-    Getting the infix expression, the infix expression is transformed into a postfix expression. Evaluate the postfix expression for every pixel and plot the value. Each small unit is 5px. In a trigonometric graph, x is in degree.
+
+# Process
+Getting the infix expression, the infix expression is transformed into a postfix expression. Evaluate the postfix expression for every pixel and plot the value. Each small unit is 5px. In a trigonometric graph, x is in degree.
