@@ -1,9 +1,13 @@
 # Javascript-graph-plotter
-A simple javascript graph plotter that can plot polynomial and trigonometric expressions. 
-This graph plotter show a full screen graph.User can zoomin or zoomout the graph.User can easily get the value of y by counting the no of small boxes for any values of x.
+A simple javascript graph plotter that can plot polynomial and trigonometric expressions. This graph plotter shows a full-screen graph. Users can zoom in or zoom out of the graph. Users can easily get the value of y by counting the no of small boxes for any value of x.
 
-"polynomial and trigonometric" file is the actual code for this graph plotter.And "polynomial" file is created initially.
-Some important point about this graph plotter:
+# Website
+https://16sumanrana.github.io/graph-plotter/index.html
+
+Note:
+"polynomial and trigonometric" (later changed to index.html) file is the actual code for this graph plotter. And "polynomial" file is created initially.
+
+Some important points about this graph plotter:
   1. Input expression must be parenthesized correctly i.e. use sin(x) instead of sin x or use 10*(x-2)^2+45*x and x is always in lower-case.Don't use whitespace in the expression. 
   2.            To use:                 use:
   
@@ -36,4 +40,4 @@ Some important point about this graph plotter:
   3. This graph plotter does not show infinity.
   
   Process:
-    Getting the infix expression, the infix expression is transformed to postfix expression. Evaluate the postfix expression for every pixel and plot the value. Each small unit=5px.In trigonometric graph x is in degree.
+    Getting the infix expression, the infix expression is transformed into a postfix expression. Evaluate the postfix expression for every pixel and plot the value. Each small unit is 5px. In a trigonometric graph, x is in degree.
