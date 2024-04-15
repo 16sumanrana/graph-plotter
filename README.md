@@ -2,7 +2,7 @@
 A simple javascript graph plotter that can plot polynomial and trigonometric expressions. This graph plotter shows a full-screen graph. Users can zoom in or zoom out of the graph. Users can easily get the value of y by counting the no of small boxes for any value of x.
 
 # Website
-https://16sumanrana.github.io/graph-plotter/index.html
+https://16sumanrana.github.io/graph-plotter/
 
 Note:
 "polynomial and trigonometric" (later changed to index.html) file is the actual code for this graph plotter. And "polynomial" file is created initially.
